@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Did Not Connect: Potential Security Issue</title>
+    <link rel="stylesheet" href="chrome://browser/skin/aboutNetError.css" type="text/css" media="all" />
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/warning.svg" />
+    <link rel="localization" href="browser/aboutCertError.ftl" />
+    <link rel="localization" href="browser/nsserrors.ftl" />
+    <link rel="localization" href="branding/brand.ftl" />
+  </head>
+
+  <body dir="ltr" class="badStsCert certerror" code="SEC_ERROR_UNKNOWN_ISSUER">
+    <!-- ERROR ITEM CONTAINER (removed during loading to avoid bug 39098) -->
+    <div id="errorContainer">
+      <div id="errorPageTitlesContainer">
+        <span id="ept_nssBadCert">Warning: Potential Security Risk Ahead</span>
+        <span id="ept_nssBadCert_sts">Did Not Connect: Potential Security Issue</span>
+        <span id="ept_captivePortal">Log in to network</span>
+        <span id="ept_dnsNotFound">Server Not Found</span>
+        <span id="ept_malformedURI">Invalid URL</span>
+        <span id="ept_blockedByPolicy">Blocked Page</span>
+      </div>
+      <div id="errorDescriptionsContainer">
+        <div id="ed_generic">
+<p>Firefox can’t load this page for some reason.</p>
+</div>
+        <div id="ed_captivePortal">
+<p>You must log in to this network before you can access the Internet.</p>
+</div>
+        <div id="ed_dnsNotFound">
+<strong>If that address is correct, here are three other things you can try:</strong>
+<ul>
+  <li>Try again later.</li>
+  <li>Check your network connection.</li>
+  <li>If you are connected but behind a firewall, check that Firefox has permission to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_fileNotFound">
+<ul>
+  <li>Check the file name for capitalization or other typing errors.</li>
+  <li>Check to see if the file was moved, renamed or deleted.</li>
+</ul>
+</div>
+        <div id="ed_fileAccessDenied">
+<ul>
+  <li>It may have been removed, moved, or file permissions may be preventing access.</li>
+</ul>
+</div>
+        <div id="ed_malformedURI"></div>
+        <div id="ed_unknownProtocolFound">
+<ul>
+  <li>You might need to install other software to open this address.</li>
+</ul>
+</div>
+        <div id="ed_connectionFailure">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_netTimeout">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_redirectLoop">
+<ul>
+  <li>This problem can sometimes be caused by disabling or refusing to accept
+    cookies.</li>
+</ul>
+</div>
+        <div id="ed_unknownSocketType">
+<ul>
+  <li>Check to make sure your system has the Personal Security Manager
+    installed.</li>
+  <li>This might be due to a non-standard configuration on the server.</li>
+</ul>
+</div>
+        <div id="ed_netReset">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_notCached"><p>The requested document is not available in Firefox’s cache.</p><ul><li>As a security precaution, Firefox does not automatically re-request sensitive documents.</li><li>Click Try Again to re-request the document from the website.</li></ul></div>
+        <div id="ed_netOffline">
+<ul>
+  <li>Press "Try Again" to switch to online mode and reload the page.</li>
+</ul>
+</div>
+        <div id="ed_netInterrupt">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_deniedPortAccess"></div>
+        <div id="ed_proxyResolveFailure">
+<ul>
+  <li>Check the proxy settings to make sure that they are correct.</li>
+  <li>Check to make sure your computer has a working network connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_proxyConnectFailure">
+<ul>
+  <li>Check the proxy settings to make sure that they are correct.</li>
+  <li>Contact your network administrator to make sure the proxy server is
+    working.</li>
+</ul>
+</div>
+        <div id="ed_contentEncodingError">
+<ul>
+  <li>Please contact the website owners to inform them of this problem.</li>
+</ul>
+</div>
+        <div id="ed_unsafeContentType">
+<ul>
+  <li>Please contact the website owners to inform them of this problem.</li>
+</ul>
+</div>
+        <div id="ed_nssFailure2">
+<ul>
+  <li>The page you are trying to view cannot be shown because the authenticity of the received data could not be verified.</li>
+  <li>Please contact the website owners to inform them of this problem.</li>
+</ul>
+</div>
+        <div id="ed_nssBadCert">Firefox detected a potential security threat and did not continue to <span class="hostname">www.google.com</span>. If you visit this site, attackers could try to steal information like your passwords, emails, or credit card details.</div>
+        <div id="ed_nssBadCert_sts">Firefox detected a potential security threat and did not continue to <span class="hostname">www.google.com</span> because this website requires a secure connection.</div>
+        <div id="ed_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE">Firefox detected an issue and did not continue to <span class="hostname">www.google.com</span>. The website is either misconfigured or your computer clock is set to the wrong time.</div>
+        <div id="ed_mitm"><span class="hostname">www.google.com</span> is most likely a safe site, but a secure connection could not be established. This issue is caused by <span class="mitm-name"></span>, which is either software on your computer or your network.</div>
+        <div id="ed_cspBlocked"><p>Firefox prevented this page from loading in this way because the page has a content security policy that disallows it.</p></div>
+        <div id="ed_xfoBlocked"><p>Firefox prevented this page from loading in this context because the page has an X-Frame-Options policy that disallows it.</p></div>
+        <div id="ed_corruptedContentErrorv2"><p>The page you are trying to view cannot be shown because an error in the data transmission was detected.</p><ul><li>Please contact the website owners to inform them of this problem.</li></ul></div>
+        <div id="ed_sslv3Used">Advanced info: SSL_ERROR_UNSUPPORTED_VERSION</div>
+        <div id="ed_inadequateSecurityError"><p><span class="hostname">www.google.com</span>
+ uses security technology that is outdated and vulnerable to attack. An 
+attacker could easily reveal information which you thought to be safe. 
+The website administrator will need to fix the server first before you 
+can visit the site.</p><p>Error code: NS_ERROR_NET_INADEQUATE_SECURITY</p></div>
+        <div id="ed_blockedByPolicy"></div>
+        <div id="ed_clockSkewError">Your computer thinks it is <span id="wrongSystemTime_systemDate1"></span>, which prevents Firefox from connecting securely. To visit <span class="hostname">www.google.com</span>, update your computer clock in your system settings to the current date, time, and time zone, and then refresh <span class="hostname">www.google.com</span>.</div>
+        <div id="ed_networkProtocolError"><p>The page you are trying to view cannot be shown because an error in the network protocol was detected.</p><ul><li>Please contact the website owners to inform them of this problem.</li></ul></div>
+      </div>
+      <div id="errorDescriptions2Container">
+          <div id="ed2_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE">It’s 
+likely the website’s certificate is expired, which prevents Firefox from
+ connecting securely. If you visit this site, attackers could try to 
+steal information like your passwords, emails, or credit card details.</div>
+          <div id="ed2_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE_sts">It’s likely the website’s certificate is expired, which prevents Firefox from connecting securely.</div>
+      </div>
+      <div id="whatCanYouDoAboutItTitleContainer">
+        <div id="edd_nssBadCert"><strong>What can you do about it?</strong></div>
+      </div>
+      <div id="whatCanYouDoAboutItContainer">
+        <div id="es_nssBadCert_SEC_ERROR_UNKNOWN_ISSUER">
+<p>The issue is most likely with the website, and there is nothing you can do to resolve it.</p>
+<p>If you are on a corporate network or using anti-virus software, you 
+can reach out to the support teams for assistance. You can also notify 
+the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2"></span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.google.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_SEC_ERROR_EXPIRED_ISSUER_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2"></span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.google.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_MOZILLA_PKIX_ERROR_NOT_YET_VALID_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2"></span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.google.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_MOZILLA_PKIX_ERROR_NOT_YET_VALID_ISSUER_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2"></span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.google.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_SSL_ERROR_BAD_CERT_DOMAIN">
+<p>The issue is most likely with the website, and there is nothing you 
+can do to resolve it. You can notify the website’s administrator about 
+the problem.</p>
+</div>
+        <div id="es_nssBadCert_MOZILLA_PKIX_ERROR_MITM_DETECTED">
+          <ul>
+            <li>If your antivirus software includes a feature that scans
+ encrypted connections (often called “web scanning” or “https 
+scanning”), you can disable that feature. If that doesn’t work, you can 
+remove and reinstall the antivirus software.</li>
+            <li>If you are on a corporate network, you can contact your IT department.</li>
+            <li id="mitmWhatCanYouDoAboutIt3">If you are not familiar with <span xmlns="http://www.w3.org/1999/xhtml" class="mitm-name"></span>, then this could be an attack, and there is nothing you can do to access the site.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Stores an alternative text for when we don't want to add "Recommended" to the
+           return button. This is one of many l10n atrocities in this file and should be
+           removed when we finally switch to Fluent. -->
+      <span id="stsReturnButtonText">Go Back</span>
+      <span id="stsMitmWhatCanYouDoAboutIt3">If you are not familiar with <span class="mitm-name"></span>, then this could be an attack, and there is nothing you can do to access the site.</span>
+    </div>
+
+    <!-- PAGE CONTAINER (for styling purposes only) -->
+    <div id="errorPageContainer" class="container">
+      <div id="text-container">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text" data-l10n-id="nssBadCert-sts-title">Did Not Connect: Potential Security Issue</h1>
+        </div>
+
+        <!-- LONG CONTENT (the section most likely to require scrolling) -->
+        <div id="errorLongContent">
+
+          <!-- Short Description -->
+          <div id="errorShortDesc">
+            <p id="errorShortDescText">Firefox detected a potential security threat and did not continue to <span xmlns="http://www.w3.org/1999/xhtml" class="hostname">www.google.com</span> because this website requires a secure connection.</p>
+          </div>
+
+          <div id="errorShortDesc2">
+              <p id="errorShortDescText2"></p>
+          </div>
+
+          <div id="errorWhatToDoTitle">
+              <p id="errorWhatToDoTitleText"><strong xmlns="http://www.w3.org/1999/xhtml">What can you do about it?</strong></p>
+          </div>
+
+          <div id="errorWhatToDo">
+              <p id="badStsCertExplanation"><span class="hostname">www.google.com</span>
+ has a security policy called HTTP Strict Transport Security (HSTS), 
+which means that Firefox can only connect to it securely. You can’t add 
+an exception to visit this site.</p>
+              <p id="errorWhatToDoText">
+<p xmlns="http://www.w3.org/1999/xhtml">The issue is most likely with the website, and there is nothing you can do to resolve it.</p>
+<p xmlns="http://www.w3.org/1999/xhtml">If you are on a corporate 
+network or using anti-virus software, you can reach out to the support 
+teams for assistance. You can also notify the website’s administrator 
+about the problem.</p>
+</p>
+          </div>
+
+          <div id="errorWhatToDo2">
+              <p id="errorWhatToDoText2"></p>
+              <p id="badStsCertExplanation" hidden="true"><span class="hostname">www.google.com</span>
+ has a security policy called HTTP Strict Transport Security (HSTS), 
+which means that Firefox can only connect to it securely. You can’t add 
+an exception to visit this site.</p>
+          </div>
+
+          <!-- Long Description (Note: See netError.dtd for used XHTML tags) -->
+          <div id="errorLongDesc"></div>
+
+          <div id="tlsVersionNotice" hidden="true">
+            <p data-l10n-id="cert-error-old-tls-version">This website might not support the TLS 1.2 protocol, which is the minimum version supported by Firefox.</p>
+          </div>
+
+          <div id="learnMoreContainer" style="display: block;">
+            <p><a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" href="https://support.mozilla.org/1/firefox/101.0.1/Linux/en-US/connection-not-secure">Learn more…</a></p>
+          </div>
+
+          <div id="openInNewWindowContainer" class="button-container">
+            <p><a id="openInNewWindowButton" target="_blank" rel="noopener noreferrer">
+            <button class="primary" data-l10n-id="open-in-new-window-for-csp-or-xfo-error">Open Site in New Window</button></a></p>
+          </div>
+        </div>
+
+        <!-- UI for option to report certificate errors to Mozilla. Removed on
+             init for other error types .-->
+        <div id="prefChangeContainer" class="button-container">
+          <p>It looks like your network security settings might be causing this. Do you want the default settings to be restored?</p>
+          <button id="prefResetButton" class="primary">Restore default settings</button>
+        </div>
+
+        <div id="certErrorAndCaptivePortalButtonContainer" class="button-container">
+          <button id="returnButton" class="primary" data-telemetry-id="return_button_top">Go Back</button>
+          <button id="openPortalLoginPageButton" class="primary">Open Network Login Page</button>
+          <button class="primary try-again">Try Again</button>
+          <button id="advancedButton" data-telemetry-id="advanced_button">Advanced…</button>
+        </div>
+      </div>
+
+      <div id="netErrorButtonContainer" class="button-container">
+        <button class="primary try-again">Try Again</button>
+      </div>
+
+      <div id="advancedPanelContainer">
+        <div id="badCertAdvancedPanel" class="advanced-panel" hidden="">
+          <p id="badCertTechnicalInfo"><label data-l10n-id="cert-error-trust-unknown-issuer-intro" data-l10n-args="{}">Someone could be trying to impersonate the site and you should not continue.</label>
+ 
+<label data-l10n-id="cert-error-trust-unknown-issuer" data-l10n-args="{&quot;hostname&quot;:&quot;www.google.com&quot;}">Websites prove their identity via certificates. Firefox does not trust www.google.com because its certificate issuer is unknown, the certificate is self-signed, or the server is not sending the correct intermediate certificates.</label>
+ 
+<label data-l10n-id="cert-error-code-prefix-link" data-l10n-args="{&quot;error&quot;:&quot;SEC_ERROR_UNKNOWN_ISSUER&quot;}">Error code: <a id="errorCode" data-l10n-name="error-code-link" data-telemetry-id="error_code_link" href="#certificateErrorDebugInformation">SEC_ERROR_UNKNOWN_ISSUER</a></label>
+ 
+</p>
+          <a id="viewCertificate" href="javascript:void(0)">View Certificate</a>
+          <div id="advancedPanelButtonContainer" class="button-container">
+            <button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv">Go Back</button>
+            <button class="primary try-again">Try Again</button>
+            <div class="exceptionDialogButtonContainer">
+              <button id="exceptionDialogButton" data-telemetry-id="exception_button" hidden="">Accept the Risk and Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="blockingErrorReporting" class="advanced-panel" hidden="">
+            <p class="toggle-container-with-text">
+                <input type="checkbox" id="automaticallyReportBlockingInFuture" role="checkbox" />
+                <label for="automaticallyReportBlockingInFuture">Report errors like this to help Mozilla identify and block malicious sites</label>
+            </p>
+        </div>
+
+        <div id="certificateErrorDebugInformation" class="advanced-panel" hidden="">
+          <button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top">Copy text to clipboard</button>
+          <div id="certificateErrorText">https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m12!1m8!1m3!1d11751.086454083275!2d-82.997117!3d42.581368!3m2!1i1024!2i768!4f13.1!2m1!1sRose+Kidd+Elementary+School,+Gladstone+Drive,+Sterling+Heights,+MI!6i15!3m1!1sen!5m1!1sen
+
+Peer’s Certificate issuer is not recognized.
+
+HTTP Strict Transport Security: false
+HTTP Public Key Pinning: true
+
+Certificate chain:
+
+-----BEGIN CERTIFICATE-----
+MIICkjCCAXqgAwIBAgIRfNRoLTwRMGf8EiN1+lh5k/AwDQYJKoZIhvcNAQELBQAw
+SjETMBEGCgmSJomT8ixkARkWA09SRzEWMBQGCgmSJomT8ixkARkWBlVDU0lOVDEb
+MBkGA1UEAxMSVUNTSU5ULTAwLVVDU0NBLUNBMB4XDTIyMDYwNjA5NDAwMFoXDTIy
+MDgyOTA5Mzk1OVowGTEXMBUGA1UEAxMOd3d3Lmdvb2dsZS5jb20wWTATBgcqhkjO
+PQIBBggqhkjOPQMBBwNCAATuGcLp1SNGOvm2D25g1A9OlSLCuoNAmUCMhqrHd4CA
+QmF/976grVtvbdCwApm9Pef3deRkncPsTfu22+VY4ocLo28wbTAOBgNVHQ8BAf8E
+BAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4E
+FgQUWVwHKuk+m9ZD0/h/+Jsgactucp8wGQYDVR0RBBIwEIIOd3d3Lmdvb2dsZS5j
+b20wDQYJKoZIhvcNAQELBQADggEBACwpPqIQYpiDV3DcagMw31Hp/b37zoSUt1j+
+z1zI2+KjipgWZeFakJztql4FJB0PlzzUHvcPchHeY7SaW3GbveSg8+SCSk2UvPkw
+qD9xGQ6r/l1Sf0D+acPUBonPzlO5j/HDFUhZU+kEl2H00h5rfOIbSMS6KIDwfCXj
+KjitLlz1hgMO1AyCz/6+qtLtDzBZdNfW41LRzsLwqnmX9Epk44+BtA+60Q7UUln3
+K6/0jxhOWhsLBSP/iomNK7MluNNr94oL4tzfzDyA4BtD510fd8MXwAeOOz+ENy+S
+gGUgjUqAVULN0DzR8AgdmTFa6ITa5xa8xgFw2+kU7Xj6FymVQRY=
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIDhzCCAm+gAwIBAgIQH1wqVIvTl7pABOSEiCi2NjANBgkqhkiG9w0BAQsFADBK
+MRMwEQYKCZImiZPyLGQBGRYDT1JHMRYwFAYKCZImiZPyLGQBGRYGVUNTSU5UMRsw
+GQYDVQQDExJVQ1NJTlQtMDAtVUNTQ0EtQ0EwHhcNMjAwMzIzMTk0NDM5WhcNMzAw
+MzIzMTk1NDM4WjBKMRMwEQYKCZImiZPyLGQBGRYDT1JHMRYwFAYKCZImiZPyLGQB
+GRYGVUNTSU5UMRswGQYDVQQDExJVQ1NJTlQtMDAtVUNTQ0EtQ0EwggEiMA0GCSqG
+SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+K7ctnVjsvpFltQqHUFjcct6xC+mH5i+R
+myQ4++UMLvLaUjtmRU+do8XGRFhLCxZFd5P0l11PVzHsszAAW2cgAKhCSZTQAGoJ
+JmxbTT0wgoLXiB5FTGhn0V4vXn/ojEiKyeaMReA3qyJ8qlsGobT4RW/MPHsxZpBq
+bNmaSz0vdnFMbJ3dbG8HHtBIjyUMuD7TeJdNrBe7fO+/grw3AN3sZGvHJ+jfDokW
+BXu/EvrRvFI132klJwF1fQikaJ2xX8/QiwmNOw+a84999j/sYkiwIXfy9imHaqYV
+JWuOc4s/Nj5ejGtlp0RFXAzzHDY8Vhtkgva7iA9OwJLeyA0AmuKxAgMBAAGjaTBn
+MBMGCSsGAQQBgjcUAgQGHgQAQwBBMA4GA1UdDwEB/wQEAwIBhjAPBgNVHRMBAf8E
+BTADAQH/MB0GA1UdDgQWBBSRwxjaY0Dgk4QIoCAH9387Hb3uQjAQBgkrBgEEAYI3
+FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAEhdQ4zDteLSRvgBCQffKNfOaLz/z
+8Nd4U2nhJIfauDM4YdsBeqpQ/ckf/ZHDXVvEPDXAkL+DihGOd/8d7X0ruDa+l/xP
+KZZ3SMH23XJRLIuZ5Ww6WNYmoFo9CdcSUSF1VeChzWDxjvOo+MAPv9A6ZmalW5a9
+BfAAbETMvTZlSHWRqw2xiY6A5ZqdPzVbqWJaYmuiEErH8rf7WmqR5ShvIJk4ZIal
+5Rt5hjmeoZ+pkwcIHskbj9oAsm5FBRAj5YurLBV4b9zwLPCSH9rL+7zF60a3LSKY
+bk28wk49AWXxLGzu0ZJs3BCDqUfQ26PCO3ICo4katDxjq6Hz4ckrWBuC4A==
+-----END CERTIFICATE-----
+</div>
+          <button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot">Copy text to clipboard</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="chrome://browser/content/certerror/aboutNetErrorCodes.js"></script>
+  <script type="module" src="chrome://browser/content/certerror/aboutNetError.js"></script>
+</html>
