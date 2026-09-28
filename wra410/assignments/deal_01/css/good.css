@@ -5,87 +5,84 @@
 	css reset - this sets ALL elements to have zero padding and margin, 
 	and to display in the more logical border-box style
 */
+:root {
+	--font-sans: 'Inter', sans-serif;
+}
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: var(--font-sans)
 }
 
-/*
-	start with the outermost container, the <nav>
-	this controls the layout of two elements - the .logo div and the <ul>
-	remember, this is for the NARROW view - the default should be for mobile devices
-*/
 nav {
 	display: flex;
-	flex-direction: column;
-	font-family: "Inter", sans-serif;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem;
+	padding: 0rem 0.5rem;
+	border: 1px solid black;
+	border-radius: .5rem;
+	height: 5rem;
+}
+nav .logo {
 	padding: 1rem;
+	text-transform: uppercase;
 }
 
-
-/*
-	style the logo div
-*/
-.logo {
-	background-color: hsl(300, 100%, 50%);
-	width: 6rem;
-	height: 6rem;
-}
-
-/*
-	the text in the logo
-*/
-.logo h1 {
-	color: white;
-	font-weight: bold;
-}
-
-/* 
-	style only <ul> elements that are inside of the <nav> element
-*/
 nav ul {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	list-style: none;
+	height: 100%;
 }
-
-
-/*
-	the actual links - these are the clickable elements
-	- setting to 'inline-block' fixes things, just do it
-*/
+nav ul li {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
 nav ul li a {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
 	padding: 1rem;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	text-decoration: black wavy underline 2px;
+	text-underline-offset: 0.5rem;
+	text-decoration-inset: 50px;
+	color: black;
+	opacity: 0.6;
+	font-weight: 400;
+	transition: text-decoration-inset .2s, opacity .1s, background-color .2s;
 }
-
-
-/*
-	change  the background color of the current and hover versions of the links 
-*/
-nav ul li a.current,
 nav ul li a:hover {
-	background-color: hsl(300 100% 50%);
+	text-decoration-inset: 8px;
+	opacity: 1;
+	background-color: #eee;
 }
 
-
-/*
-	also, shift the layout of the hovering element slightly 
-*/
-nav ul li a:hover {
-	transform: translate(0.1rem, 0.1rem);
+.current {
+	text-decoration: black wavy underline 2px;
+	text-decoration-inset: 8px;
+	opacity: 1;
+	background-color: #eee;
+	font-weight: 500;
 }
 
-
-
-/* the enahanced, wide screen version - IF the page is wider than 768px */
-@media screen and (min-width: 769px) {
-
-	/* set the flex layouts to the default "row" directions */
-	nav,
-	nav ul {
-		flex-direction: row;
+@media screen and (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		height: 9rem;
+	}
+	nav ul li a {
+		border-top: 1px solid black
 	}
 }
