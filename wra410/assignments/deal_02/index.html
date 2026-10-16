@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en-US">
+  <head>
+    <title>WRA Assignment 02</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+
+  <body id="main">
+    <div id="content">
+      <h1>Birthday Pokémon</h1>
+      <p>
+        This page displays which pokémon correspond to which birthdays. Input
+        via:
+      </p>
+
+      <div id="inner-content">
+        <nav id="tab-nav">
+          <button id="birthday-tab" class="tab">Birthday Date</button>
+          <button id="select-tab" class="tab">Specific Pokémon</button>
+          <button id="random-tab" class="tab">Random</button>
+        </nav>
+        <div id="inner-content-main">
+          <div id="birthday-input-content" class="input-wrapper">
+            <div id="birthday-input-wrapper">
+              <label>Birthday</label>
+              <select id="birthday-month">
+                <option value="">MM</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select id="birthday-day">
+                <option value="">DD</option>
+              </select>
+            </div>
+            <button class="load-pokemon" id="birthday-load-pokemon">
+              Load Pokémon
+            </button>
+          </div>
+          <div id="select-input-content" class="input-wrapper">
+            <input
+              type="text"
+              placeholder="Input a Pokémon ID"
+              id="select-input"
+            />
+            <p>
+              Associated Birthday: <span id="select-associated-birthday"></span>
+            </p>
+            <button class="load-pokemon" id="select-load-pokemon">
+              Load Pokémon
+            </button>
+          </div>
+          <div id="random-input-content" class="input-wrapper">
+            <button class="load-pokemon" id="random-load-pokemon">
+              Load Pokémon
+            </button>
+            <p>
+              Associated Birthday: <span id="random-associated-birthday"></span>
+            </p>
+          </div>
+          <div id="error-message"></div>
+          <div id="loaded-content">
+            <div id="sprite-wrapper">
+              <img src="" alt="" id="pokemon-sprite" />
+            </div>
+            <div id="loaded-content-text-wrapper">
+              <div id="info-wrapper">
+                <div id="pokemon-id"></div>
+                <div id="pokemon-name"></div>
+                <div id="pokemon-types"></div>
+              </div>
+              <div id="pokemon-flavor-text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
